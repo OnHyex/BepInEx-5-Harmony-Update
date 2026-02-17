@@ -17,15 +17,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\BepInEx.Bootstrap\BepInEx.Bootstrap.csproj" ReferenceOutputAssembly="false"/>
+        <ProjectReference Include="..\BepInEx.Bootstrap\BepInEx.Bootstrap.csproj" ReferenceOutputAssembly="false" />
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Include="..\BepInEx.Bootstrap\$(OutputPath)\BepInEx.Bootstrap.dll"/>
+        <EmbeddedResource Include="..\BepInEx.Bootstrap\$(OutputPath)\BepInEx.Bootstrap.dll" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="ILRepack.Lib.MSBuild.Task" Version="2.0.33" PrivateAssets="all"/>
-        <PackageReference Include="Mono.Cecil" Version="0.10.4"/>
+        <PackageReference Include="ILRepack.Lib.MSBuild.Task" Version="2.0.33" PrivateAssets="all" />
+        <PackageReference Include="Mono.Cecil" Version="0.10.4" />
     </ItemGroup>
 </Project>

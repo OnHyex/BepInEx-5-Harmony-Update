@@ -2,7 +2,7 @@
     <PropertyGroup>
         <Product>BepInEx.Preloader</Product>
         <Copyright>Copyright © Bepis 2019</Copyright>
-        <TargetFramework>net40</TargetFramework>
+        <TargetFramework>net35</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <CopyDocumentationFilesFromPackages>true</CopyDocumentationFilesFromPackages>
         <VersionPrefix>$(BepInExVersionPrefix)</VersionPrefix>
@@ -16,7 +16,7 @@
 
     <ItemGroup>
         <PackageReference Include="HarmonyX" Version="2.16.0" />
-        <PackageReference Include="Mono.Cecil" Version="0.11.6" />
+        <PackageReference Include="Mono.Cecil" Version="0.10.4" />
         <PackageReference Include="MonoMod.RuntimeDetour" Version="25.3.3" />
         <PackageReference Include="MonoMod.Utils" Version="25.0.11" />
     </ItemGroup>

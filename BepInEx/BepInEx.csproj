@@ -3,7 +3,7 @@
     <Product>BepInEx</Product>
     <Description>Unity plugin injection framework</Description>
     <Copyright>Copyright © Bepis 2018</Copyright>
-    <TargetFrameworks>net40;net45</TargetFrameworks>
+    <TargetFrameworks>net35</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <CopyDocumentationFilesFromPackages>true</CopyDocumentationFilesFromPackages>
     <VersionPrefix>$(BepInExVersionPrefix)</VersionPrefix>
@@ -29,7 +29,7 @@
 
   <ItemGroup>
     <PackageReference Include="HarmonyX" Version="2.16.0" />
-    <PackageReference Include="Mono.Cecil" Version="0.11.6" />
+    <PackageReference Include="Mono.Cecil" Version="0.10.4" />
     <PackageReference Include="MonoMod.RuntimeDetour" Version="25.3.3" />
     <PackageReference Include="MonoMod.Utils" Version="25.0.11" />
     <PackageReference Include="UnityEngine" Version="5.6.1" IncludeAssets="compile" />
