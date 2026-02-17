@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
@@ -54,9 +54,10 @@ namespace BepInEx
 
 		public static void Initialize(bool alreadyActive)
 		{
-			if (PlatformHelper.Is(Platform.Unix))
+#warning "need to check if Platform.Unix is equivalent to OSKind.Posix or OSKind.Linux"
+			if (PlatformDetection.OS == OSKind.Posix)
 				Driver = new LinuxConsoleDriver();
-			else if (PlatformHelper.Is(Platform.Windows))
+			else if (PlatformDetection.OS == OSKind.Windows)
 				Driver = new WindowsConsoleDriver();
 
 			Driver.Initialize(alreadyActive);

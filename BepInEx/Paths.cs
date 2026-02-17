@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using MonoMod.Utils;
@@ -15,7 +15,7 @@ namespace BepInEx
 			ExecutablePath = executablePath;
 			ProcessName = Path.GetFileNameWithoutExtension(executablePath);
 
-			GameRootPath = PlatformHelper.Is(Platform.MacOS)
+			GameRootPath = PlatformDetection.OS == OSKind.OSX
 				? Utility.ParentDirectory(executablePath, 4)
 				: Path.GetDirectoryName(executablePath);
 

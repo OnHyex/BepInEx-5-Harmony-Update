@@ -1,4 +1,4 @@
-﻿using BepInEx.Configuration;
+using BepInEx.Configuration;
 using BepInEx.Logging;
 using System;
 using System.Collections.Generic;
@@ -144,8 +144,8 @@ namespace BepInEx.Bootstrap
 				if (Logger.Listeners.FirstOrDefault(l => l is ConsoleLogListener) is ConsoleLogListener consoleLogListener)
 					consoleLogListener.WriteUnityLogs = false;
 			}
-
-			if (PlatformHelper.Is(Platform.Unix))
+#warning "this may need to become OSKind.Linux for specifity"
+			if (PlatformDetection.OS == OSKind.Posix)
 			{
 				Logger.LogInfo($"Detected Unity version: v{UnityVersion}");
 			}
